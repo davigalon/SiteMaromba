@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: justify;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button:hover {
+    background: darkgreen;
+    color: white;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+}
+  
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.slider img:first-child {
+    z-index: 1;
+}
+  
+.slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.product img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.footer { 
+    position: absolute; 
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    left: 0; 
+    width: 100%;
+    height: 2.5rem;  
+}
+

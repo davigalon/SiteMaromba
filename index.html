@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Suplementos do IFRJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Suplementos do IFRJ</h1>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Encontre o suplemento ideal"
+                       name="search" size="80">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="slider">
+        <img id="img-1" src="assets/img-1.jpg" alt="Image 1"/>
+        <img id="img-2" src="assets/img-2.jpg" alt="Image 2"/>
+        <img id="img-3" src="assets/img-3.jpg" alt="Image 3"/>
+      </div>
+      <div class="navigation-button">
+        <script>
+            function changeSlide(n) {
+                var imgs = document.querySelectorAll('.slider img');
+                var dots = document.querySelectorAll('.dot');
+                var currentImg = 0; // index of the first image 
+                const interval = 3000; // duration(speed) of the slide
+                
+                for (var i = 0; i < imgs.length; i++) { // reset
+                    imgs[i].style.opacity = 0;
+                    dots[i].className = dots[i].className.replace(' active', '');
+                }
+            
+                currentImg = n;
+            
+                imgs[currentImg].style.opacity = 1;
+                dots[currentImg].className += ' active';
+            }
+        </script>
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+      </div>
+    
+    <div class="container" id="home">
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="product">
+                <img src="muscle.jpg" alt="Produto 1">
+                <div>
+                    <h3>MUSCLE UP</h3>
+                    <p>Suplemento para o crescimento muscular.</p>
+                    <p><strong>Preço:</strong> R$ 99,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <div>
+                    <h3>Produto 2</h3>
+                    <p> Creatina Monoidratada para ganho de força muscular.</p>
+                    <p><strong>Preço:</strong> R$ 79,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Para mais informações, entre em contato conosco pelo telefone: (22) 98765-4321 ou pelo e-mail: contato@suplementosacademiaifrj.com</p>
+            </section>
+            <div class="footer">
+                &copy; 2024 Suplementos de Academia. Todos os direitos reservados.
+            </div>
+        </section>
+    </div>
+</body>
+</html>
