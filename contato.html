@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .section1 .left-menu {
+            display: flex;
+            align-items: center;
+        }
+        .section1 .right-menu {
+            display: flex;
+            align-items: center;
+        }
+        .section1 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .section1 .menu {
+            display: inline-block;
+            position: relative;
+        }
+        .section1 .menu:hover .dropdown-content {
+            display: block;
+        }
+        .section1 .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 100px;
+            z-index: 1;
+        }
+        .section1 .dropdown-content a {
+            display: block;
+            padding: 10px;
+        }
+        .section1 .search-bar {
+            margin-left: 20px;
+        }
+        .section1 .icon {
+            width: 24px; /* Ajuste o tamanho conforme necessário */
+            height: 24px; /* Ajuste o tamanho conforme necessário */
+            margin-left: 20px;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+        .contact-info {
+            max-width: 600px;
+            margin: auto;
+            font-size: 18px;
+        }
+        .contact-info h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: blue;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Seção de Navegação -->
+    <nav class="section1">
+        <div class="left-menu">
+            <a href="index.html">Início</a>
+            <div class="menu">
+                <a href="#">Mais</a>
+                <div class="dropdown-content">
+                    <a href="contato.html">Contato</a>
+                    <a href="#">Sobre nós</a>
+                </div>
+            </div>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+        </div>
+        <div class="right-menu">
+            <a href="#"><img src="shop-cart-icon.png" alt="Carrinho de Compras" class="icon"></a>
+            <a href="#"><img src="profile-icon.png" alt="Perfil" class="icon"></a>
+        </div>
+    </nav>
+
+    <!-- Seção de Informações de Contato -->
+    <div class="content">
+        <div class="contact-info">
+            <h2>Contate-nos</h2>
+            <p>Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato conosco pelos seguintes métodos:</p>
+            <p><strong>Email:</strong> <a href="xxx:xxx@xmail.com">xxx@xmail.com</a></p>
+            <p><strong>Telefone:</strong> +1 (12) 1 1234-5678</p>
+            <p><strong>Endereço:</strong></p>
+            <p>Rua XXX 1234,<br>
+               Sala 123,<br>
+               Cidade XXX, Brasil 12345</p>
+            <p><strong>Horário de Atendimento:</strong></p>
+            <p>Segunda - Sexta: 9:00 - 17:00<br>
+               Sábado: 10:00 - 14:00<br>
+               Domingo: Fechado</p>
+        </div>
+    </div>
+</body>
+</html>
